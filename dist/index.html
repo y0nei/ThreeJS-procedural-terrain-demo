@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dat-gui.css">
+        <title>THREE.js Demo</title>
+        <style>
+            body, h1 {
+                margin: 0;
+            }
+            h1 {
+                font-size: 15px;
+                font-family: monospace;
+                font-weight: normal;
+                margin-bottom: 15px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #source {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                width: fit-content;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
+                transition: 0.2s ease-in;
+            }
+            #source:hover {
+                background-color: rgb(95, 183, 255);
+                transition: 0.2s ease-out;
+            }
+            svg { padding: 5px; }
+        </style>
+    </head>
+    <body>
+        <h1>Hold <b>W</b> or <b>S</b> to move</h1>
+        <a id="source" href="https://gitlab.com/y0nei/threejs-procedural-terrain">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="7 8 3 12 7 16"></polyline>
+                <polyline points="17 8 21 12 17 16"></polyline>
+                <line x1="14" y1="4" x2="10" y2="20"></line>
+            </svg>
+        </a>
+        <script src="bundle.js"></script>
+    </body>
+</html>

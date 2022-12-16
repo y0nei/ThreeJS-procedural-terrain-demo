@@ -1,0 +1,15 @@
+{
+  "name": "threejs-procedural-terrain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack watch --mode=development --config webpack.config.js",
+    "prod": "webpack --mode=production --config webpack.config.js"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "three": "^0.145.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
