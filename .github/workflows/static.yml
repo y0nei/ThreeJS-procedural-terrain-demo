@@ -34,7 +34,7 @@ jobs:
       - name: Re-reate public dir
         run: |
           mkdir .public
-          cp -r ./* .public
+          cp -r ./dist/* .public
           rm -rf public
           mv .public public
       - name: Setup Pages
